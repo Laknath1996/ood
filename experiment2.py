@@ -96,5 +96,5 @@ def animate(i):
     ax.set_xticklabels([10, 500, 1000])
     ax.set_yticklabels([10, 500, 1000])
 
-anim = animation.FuncAnimation(fig, func=animate, frames=5, repeat=False, interval=100)
+anim = animation.FuncAnimation(fig, func=animate, frames=len(theta), repeat=False, interval=100)
 anim.save('animation.gif', writer='imagemagick', fps=60)
